@@ -1,0 +1,55 @@
+/*********** Couleur d'arrière plan ***********/
+    body{
+        background-color: rgb(70, 66, 95);
+    }
+
+/*********** Tableau des grilles ***********/
+    .tabloInterieur {
+        width: 55px;
+        height: 55px;
+        font-family: Tahoma;
+        font-size: 25px;
+        color: rgb(78, 78, 78);
+        text-align: center;
+        border: 1px #c0c0c0 solid;
+        cursor: pointer;
+        background-color: white;
+    }
+
+/*********** Exterieur du tableau ***********/
+    .tabloInterieur b {
+        color: slateblue;
+        cursor: pointer;
+    }
+
+/*********** Cadres du tableau ***********/
+    .tabloExterieur {
+        border: 2px #c0c0c0 solid;
+        text-align: center;
+    }
+
+/*********** Couleur success ***********/
+    .green{
+        color: green;
+    }
+
+/*********** Couleur erreur ***********/
+    .red{
+        color: red;
+    }
+
+
+    /* .blue{
+        color: slateblue;
+    } 
+
+    td {
+        font-family: Tahoma;
+        font-size: 12px;
+    }
+
+    a {
+        font-family: Tahoma;
+        font-size: 12px;
+        text-decoration: none;
+    } */

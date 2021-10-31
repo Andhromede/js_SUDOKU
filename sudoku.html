@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sudoku</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="sudoku.css">
+    </head>
+
+    <body onkeydown="toucher(event);" onload="initGrille(true,false);">
+
+        <div class="container">
+            <div class="row justify-content-center my-4">
+                <button class="btn btn-light green init mr-5"><b>nouvelle grille</b></button>
+                <button class="btn btn-light red restart"><b>recommencer</b></button>
+            </div>
+                
+            <table class="row justify-content-center">
+                <tr>
+                    <td><div id="grille"></div></td>
+                    <td class="text-align-center"></td>
+                </tr>
+
+            </table>
+                
+            <div class="col-2 mx-auto mt-4">
+                <select id='level' class="custom-select mr-sm-2">
+                    <option value='' selected>Difficulté</option>
+                    <option value='1'>Easy</option>
+                    <option value='2'>Medium</option>
+                    <option value='3'>Hardcore</option>
+                    <option value='4'>Hell</option>
+                    <option value='5'>WTF ???</option>
+                </select>
+            </div>
+
+            <div class="row justify-content-center mt-3">
+                <button onmouseover="verif(true);" onmouseout="verif(false);" class="btn btn-light blue mr-5" id="verif"><b>verifier</b></button>
+                <button href="#" onmouseover="reponse(true);" onmouseout="reponse(false);" class="btn btn-light blue" id="reponse"><b>reponse</b></button>
+            </div>
+
+        </div>
+
+        <script src="sudoku.js"></script>
+    </body>
+
+</html>
+
+
+
+
+<td class='tabloExterieur'>
+
+
+
